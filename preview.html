@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mental Game Tennis</title>
+<style>
+:root{
+--bg:#111; --panel:#1b1b1b; --accent:#d62828; --lime:#c9d83b; --light:#f4f4f4;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#efefef;color:#222}
+header{
+background:linear-gradient(#3b3b3b,#232323);
+color:white;position:sticky;top:0;z-index:10
+}
+.nav{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:18px}
+.logo{font-size:2rem;font-weight:700;color:var(--lime)}
+nav a{color:white;text-decoration:none;margin:0 14px}
+nav a:hover{color:var(--lime)}
+.cta{background:var(--accent);padding:12px 18px;border-radius:6px}
+.hero{
+background:#0f0f0f;color:white;text-align:center;padding:90px 20px
+}
+.hero h1{font-size:3rem;margin-bottom:10px}
+.btn{
+display:inline-block;background:var(--accent);color:white;
+padding:14px 22px;border-radius:8px;text-decoration:none;margin:8px
+}
+.section{max-width:1150px;margin:auto;padding:80px 24px}
+.grid{display:grid;grid-template-columns:2fr 1fr;gap:32px}
+.card{
+background:white;border-radius:14px;padding:28px;
+box-shadow:0 8px 24px rgba(0,0,0,.08)
+}
+.feature-grid{
+display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px
+}
+.course{background:#181818;color:white}
+.course h3{color:var(--lime)}
+input,textarea{
+width:100%;padding:12px;border:1px solid #ccc;border-radius:8px;margin:8px 0
+}
+footer{background:#111;color:#ddd;text-align:center;padding:30px}
+html{scroll-behavior:smooth}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">MENTAL GAME TENNIS</div>
+<nav>
+<a href="#about">About</a>
+<a href="#signup">Sign Up</a>
+<a href="#blog">Blog</a>
+<a href="#courses">Strategy Courses</a>
+<a href="#gym">Mental Gym</a>
+<a class="cta" href="#signup">Join</a>
+</nav>
+</div>
+</header>
+
+<section class="hero">
+<h1>Train the Mind. Compete with Freedom.</h1>
+<p>Mental skills training for tennis players, parents, coaches, and teams.</p>
+<a class="btn" href="#courses">Explore Courses</a>
+<a class="btn" href="#gym">Enter Mental Gym</a>
+</section>
+
+<section id="about" class="section">
+<div class="grid">
+<div class="card">
+<h2>About</h2>
+<p>This site is designed to help tennis players build focus, resilience, emotional regulation, confidence, routines, and competitive identity.</p>
+<p>Blend sport psychology, practical drills, and court-ready habits.</p>
+</div>
+<div class="card">
+<h3>Core Themes</h3>
+<ul>
+<li>Breathing</li>
+<li>Imagery</li>
+<li>Between-point routines</li>
+<li>Competitive identity</li>
+<li>Pressure training</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="signup" class="section">
+<div class="card">
+<h2>Join the Newsletter</h2>
+<form>
+<input placeholder="Name">
+<input type="email" placeholder="Email">
+<textarea rows="4" placeholder="Goals for your tennis"></textarea>
+<button class="btn">Sign Up</button>
+</form>
+</div>
+</section>
+
+<section id="blog" class="section">
+<h2>Blog</h2>
+<div class="feature-grid">
+<div class="card"><h3>Competing Relaxed</h3><p>How to stay loose under pressure.</p></div>
+<div class="card"><h3>Breathing Between Points</h3><p>Build reset habits.</p></div>
+<div class="card"><h3>Identity & Performance</h3><p>Play from values, not fear.</p></div>
+</div>
+</section>
+
+<section id="courses" class="section">
+<h2>Strategy Courses</h2>
+<div class="feature-grid">
+<div class="card course"><h3>Match Tough</h3><p>Pressure simulation and routines.</p></div>
+<div class="card course"><h3>Confidence Builder</h3><p>Practical confidence training.</p></div>
+<div class="card course"><h3>Coach Toolkit</h3><p>Mental skills for teams.</p></div>
+</div>
+</section>
+
+<section id="gym" class="section">
+<div class="card">
+<h2>Mental Gym</h2>
+<p>Your exercise library. Add drills here over time.</p>
+<ol>
+<li>30‑second reset breathing</li>
+<li>Imagery rehearsal</li>
+<li>Pressure ladder challenge</li>
+<li>Post‑match reflection</li>
+<li>Identity journaling</li>
+</ol>
+</div>
+</section>
+
+<footer>
+Mental Game Tennis • Built for GitHub Pages
+</footer>
+
+</body>
+</html>
